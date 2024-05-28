@@ -1,0 +1,437 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS Variables */
+:root {
+    --navbaar-height: 59px;
+}
+
+
+#logo {
+    margin: 7px 26px;
+
+}
+
+#logo img {
+    height: 90px;
+    width: auto;
+    margin: 5px 6px;
+    border-radius: 300px;
+
+    /* border-radius: 30px; */
+
+}
+
+#navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar .left{
+    position: absolute;
+    right: 210px;
+}
+
+.left input{
+    text-align: center;
+    border-radius: 23px;
+    height: 20px;
+}
+.left{
+    width: 260px;
+    height: 12px;
+    background-color: #b7bdb6;
+    border: 2px solid rgb(161, 150, 150);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+
+}
+
+.left > a {
+    font-size: 20px;
+    color: #070707;
+}
+.left > input{
+    width: 120px;
+    flex:1;
+    background-color: #b7bdb6;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size:18px ;
+
+}
+
+#navbar .left-1{
+    position: absolute;
+    right:130px;
+
+}
+
+.left-1 img{
+    height: 40px;
+}
+
+#navbar .left-2{
+    position: absolute;
+    right:55px;
+    
+}
+
+.left-1 img{
+    height: 40px;
+}
+
+#navbar .left:hover{
+    border:2px solid black;
+    cursor: pointer;
+
+}
+
+#navbar .left-1 img:hover{
+    cursor: pointer;
+border-radius: 90px;
+transform: scale(1.2);
+
+
+}
+#navbar .left-2 img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(171, 160, 160);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+#navbar ul li a {
+    color: rgb(60, 119, 99);
+    display: block;
+    font-weight: bold;
+    padding: 6px 19px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: 1px  0 white, -1px 0 white, 0 1px white, 0 -1px white,
+               1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(246, 133, 133);
+    border: 2px solid rgb(134, 123, 123);
+    transform: translateY(-5px);
+    text-shadow: none;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../IMG/bg4.jpg') no-repeat center center/cover;
+    top: 0px;
+    /* left: 0px; */
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 463px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    text-shadow:3px  0 #19766d, -3px 0 #fff, 0 3px #fff, 0 -3px #8ee7de,
+               1px 1px #8ee7de, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    color: #e93c0d;
+    text-align: center;
+
+}
+
+#home #P1 {
+    color: rgb(228, 231, 87);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-shadow: 2px 0 #111111, -2px 0 #684242, 0 2px #684242, 0 -2px #684242,
+               1px 1px #684242, -1px -1px #684242, 1px -1px #684242, -1px 1px #684242;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#home #P2 {
+    color: rgb(98, 11, 142);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px  0 #f7f4f4, -2px 0 #fff, 0 2px #f3eaea, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+
+}
+
+/* Services section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+.services-container  h1{
+    margin-bottom: -37px ;
+}
+
+#services .box:hover{
+border-color:  rgb(120, 146, 146);
+    transform:scale(1.1);
+    box-shadow: 0px 1px 17px 14px rgba(225, 101, 24, 0.6);
+}
+#services .box {
+    
+
+    border: 2.5px solid rgb(136, 98, 98);
+    padding: 41px 20px;
+    margin: 12px 23px ;
+    border-radius: 28px;
+    background-color: rgb(248, 248, 242);
+}
+
+#services .box img {
+    margin: auto;
+    display: block;
+    height: 156px;
+    border-radius: 30px;
+}
+
+#services .box p {
+    font-family: 'Acme', sans-serif;
+
+}
+
+/* client section */
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../IMG/pic9.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 278px;
+    z-index: -1;
+    opacity: 0.79;
+
+
+}
+
+.client-items {
+    padding: 2px 26px;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    width:  113px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem ;
+    margin: 0.1rem;
+    background-color: #cfb5c6;
+    border: 2px solid rgb(63, 58, 58);
+    border-radius: 7px ;
+    font-size: 1.1rem;
+
+}
+
+
+#contact-box form{
+    width:33%;
+}
+#contact-box form ::placeholder{
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.01rem;
+}
+
+#contact-box label{
+color: rgb(66, 32, 168);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    text-shadow:1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 36px;
+
+}
+form{
+   padding: -100px 29px ;
+}
+ #contact{
+    height: 600px;
+}
+
+/* #contact {
+    height: initial ;
+} */
+
+#contact h1{
+    padding-top:68px ;
+}
+#contact::before {
+    content: "";
+    background: url('../IMG/pic7.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 84%;
+    z-index: -1;
+    opacity: 0.79;
+    margin: 56px 0px;
+}
+
+ .btn1{
+    border: 2px solid rgb(44, 41, 41);
+    height: 35px;
+    width: 200px;
+    border-radius: 12px;
+    margin-top: 3px;
+    position: absolute;
+    right:656px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #19766d;
+
+}
+
+.btn1:hover{
+   background-color:#3B5998;
+}
+
+
+/* Utility classes */
+.h-primary {
+    font-family: 'Acme', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color:#68bc9b;
+ text-shadow:1px 0 rgb(6, 6, 6), -1px 0 white, 0 1px white, 0 -1px white,
+ 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white; ;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 12px;
+
+}
+
+.btn:hover{
+    background-color: rgb(127, 176, 176);
+    color: aliceblue;
+}
+.btn {
+    cursor: pointer;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 12px;
+    font-size: 1.4rem;
+    border-radius: 23px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.parent {
+    padding-top: -49px;
+    width: 100%;
+    background-color:rgb(174 , 165, 91,1);;
+    color: rgb(6, 6, 6);
+  
+}
+  .child{
+    background-color: rgb(174 , 165, 91,1);
+  }  
+  
+ .fa{
+    
+    padding: 14px 12px;
+    font-size: 30px;
+    width: 60px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 13px 6px;
+    border-radius: 26px;
+}
+.fa:hover {
+    border: 2px solid rgb(20, 20, 21);
+    opacity: 0.7;
+  }
+  
+ .fa-facebook {
+   
+
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+/* contact section */
